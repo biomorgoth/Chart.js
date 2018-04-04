@@ -907,8 +907,8 @@ module.exports = Element.extend({
 
 		if (gridLines.drawBorder) {
 			// Draw the line at the edge of the axis
-			context.lineWidth = helpers.valueAtIndexOrDefault(gridLines.lineWidth, 0);
-			context.strokeStyle = helpers.valueAtIndexOrDefault(gridLines.color, 0);
+			context.lineWidth = helpers.valueAtIndexOrDefault(gridLines.borderLineWidth, 0);
+			context.strokeStyle = helpers.valueAtIndexOrDefault(gridLines.borderLineColor, 0);
 			var x1 = me.left;
 			var x2 = me.right + axisWidth;
 			var y1 = me.top;
